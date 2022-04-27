@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="app.css">
+    <title>Instagram</title>
+</head>
+<body>
+    <header class="header__wrapper">
+        <div class="container header">
+            <img src="py_instagram.png" alt="Instagram" title="Instagram">
+    
+            <form action="search" class="header__search">
+                <input type="text" placeholder="Pesquisar" name="search">
+            </form>
+    
+            <nav class="header__nav">
+                <ul>
+                    <li>
+                        <svg aria-label="Página inicial" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M22 23h-6.001a1 1 0 01-1-1v-5.455a2.997 2.997 0 10-5.993 0V22a1 1 0 01-1 1H2a1 1 0 01-1-1V11.543a1.002 1.002 0 01.31-.724l10-9.543a1.001 1.001 0 011.38 0l10 9.543a1.002 1.002 0 01.31.724V22a1 1 0 01-1 1z"></path></svg>
+                    </li>
+                    <li>
+                        <svg aria-label="Messenger" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M12.003 2.001a9.705 9.705 0 110 19.4 10.876 10.876 0 01-2.895-.384.798.798 0 00-.533.04l-1.984.876a.801.801 0 01-1.123-.708l-.054-1.78a.806.806 0 00-.27-.569 9.49 9.49 0 01-3.14-7.175 9.65 9.65 0 0110-9.7z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="1.739"></path><path d="M17.79 10.132a.659.659 0 00-.962-.873l-2.556 2.05a.63.63 0 01-.758.002L11.06 9.47a1.576 1.576 0 00-2.277.42l-2.567 3.98a.659.659 0 00.961.875l2.556-2.049a.63.63 0 01.759-.002l2.452 1.84a1.576 1.576 0 002.278-.42z" fill-rule="evenodd"></path></svg>
+                    </li>
+                    <li>
+                        <svg aria-label="Nova publicação" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M2 12v3.45c0 2.849.698 4.005 1.606 4.944.94.909 2.098 1.608 4.946 1.608h6.896c2.848 0 4.006-.7 4.946-1.608C21.302 19.455 22 18.3 22 15.45V8.552c0-2.849-.698-4.006-1.606-4.945C19.454 2.7 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.547 2 5.703 2 8.552z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="6.545" x2="17.455" y1="12.001" y2="12.001"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12.003" x2="12.003" y1="6.545" y2="17.455"></line></svg>
+                    </li>
+                    <li>
+                        <svg aria-label="Encontrar pessoas" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><polygon fill="none" points="13.941 13.953 7.581 16.424 10.06 10.056 16.42 7.585 13.941 13.953" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon><polygon fill-rule="evenodd" points="10.06 10.056 13.949 13.945 7.581 16.424 10.06 10.056"></polygon><circle cx="12.001" cy="12.005" fill="none" r="10.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle></svg>
+                    </li>
+                    <li>
+                        <svg aria-label="Feed de atividades" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z"></path></svg>
+                    </li>
+                    <li class="header__photo">
+                        <img src="https://c.tenor.com/jpDqExwvoRUAAAAC/eren-llega.gif">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main__wrapper">
+        <div class="container main">
+            <section class="feed">
+                <section class="stories">
+                    <div>
+                        <img src="https://i.pinimg.com/originals/19/9a/8a/199a8a141fab5d744e2a3384ccb306e6.gif">
+                        <p>mikasa</p>
+                    </div>
+                </section>
+
+                <article class="post">
+                    <header class="post__header">
+                        <img src="https://c.tenor.com/jpDqExwvoRUAAAAC/eren-llega.gif" class="user-img">
+                        <span class="user-name">erenyeager</span>
+                    </header>
+                    <div class="post__image">
+                        <img src="https://64.media.tumblr.com/e0d953144a7c7954c9d1f71cdbb0cb0b/03225632c5a8588d-1a/s1280x1920/fbe70476995e7adb16774cf73de9a62d3268e14c.gifv">
+                    </div>
+                    <footer class="post__footer">
+                        <ul class="post__actions">
+                            <li>
+                                <svg aria-label="Curtir" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z"></path></svg>
+                            </li>
+                            <li>
+                                <svg aria-label="Comentar" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M20.656 17.008a9.993 9.993 0 10-3.59 3.615L22 22z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path></svg>
+                            </li>
+                            <li>
+                                <svg aria-label="Compartilhar publicação" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line><polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon></svg>
+                            </li>
+                        </ul>
+                        <div class="post__content">
+                            <p class="post__likes">154.984.657 de curtidas</p>
+                            <div class="post__caption">
+                                <span>erenyeager</span>
+                                <p>Curtindo mais a vida.....</p>
+                            </div>
+                            <p class="post__time">
+                                Há 1 dia
+                            </p>
+                        </div>
+                    </footer>
+                </article>
+                <article class="post">
+                    <header class="post__header">
+                        <img src="https://c.tenor.com/jpDqExwvoRUAAAAC/eren-llega.gif" class="user-img">
+                        <span class="user-name">erenyeager</span>
+                    </header>
+                    <div class="post__image">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1fe56053-597e-45b3-a3b1-f26197574147/debjknn-0552b725-3b7a-452a-a2f8-bcd07f7ece3f.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFmZTU2MDUzLTU5N2UtNDViMy1hM2IxLWYyNjE5NzU3NDE0N1wvZGViamtubi0wNTUyYjcyNS0zYjdhLTQ1MmEtYTJmOC1iY2QwN2Y3ZWNlM2YuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.VVs1pOh8IePoSRV6987aGcA12iZEFVtak5EV0gtZvrs">
+                    </div>
+                    <footer class="post__footer">
+                        <ul class="post__actions">
+                            <li>
+                                <svg aria-label="Curtir" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z"></path></svg>
+                            </li>
+                            <li>
+                                <svg aria-label="Comentar" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M20.656 17.008a9.993 9.993 0 10-3.59 3.615L22 22z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path></svg>
+                            </li>
+                            <li>
+                                <svg aria-label="Compartilhar publicação" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line><polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon></svg>
+                            </li>
+                        </ul>
+                        <div class="post__content">
+                            <p class="post__likes">154.984.657 de curtidas</p>
+                            <div class="post__caption">
+                                <span>erenyeager</span>
+                                <p>curtindo a vida adoidado........</p>
+                            </div>
+                            <p class="post__time">
+                                Há 1 dia
+                            </p>
+                        </div>
+                    </footer>
+                </article>
+                <article class="post">
+                    <header class="post__header">
+                        <img src="https://c.tenor.com/jpDqExwvoRUAAAAC/eren-llega.gif" class="user-img">
+                        <span class="user-name">erenyeager</span>
+                    </header>
+                    <div class="post__image">
+                        <img src="https://64.media.tumblr.com/607dbf8c6f0d8165b19d708d2dae8402/03225632c5a8588d-0d/s1280x1920/4d57aff0ae3d86272411a7098276bbdf8e1ea400.gifv">
+                    </div>
+                    <footer class="post__footer">
+                        <ul class="post__actions">
+                            <li>
+                                <svg aria-label="Curtir" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z"></path></svg>
+                            </li>
+                            <li>
+                                <svg aria-label="Comentar" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M20.656 17.008a9.993 9.993 0 10-3.59 3.615L22 22z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path></svg>
+                            </li>
+                            <li>
+                                <svg aria-label="Compartilhar publicação" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line><polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon></svg>
+                            </li>
+                        </ul>
+                        <div class="post__content">
+                            <p class="post__likes">154.984.657 de curtidas</p>
+                            <div class="post__caption">
+                                <span>erenyeager</span>
+                                <p>pessoal...</p>
+                            </div>
+                            <p class="post__time">
+                                Há 1 dia
+                            </p>
+                        </div>
+                    </footer>
+                </article>
+            </section>
+            <aside class="sidebar">
+                <div class="sidebar__user">
+                    <img src="https://c.tenor.com/jpDqExwvoRUAAAAC/eren-llega.gif" class="sidebar__userphoto">
+                    <div class="sidebar__username">
+                        <p class="nick">erenyeager</p>
+                        <p class="name">Cristiano Moraes</p>
+                    </div>
+                </div>
+                <div class="sidebar__suggestions">
+                    <p class="title">Sugestões para você</p>
+
+                    <ul>
+                        <li>
+                            <img src="https://i.pinimg.com/originals/c4/ff/a2/c4ffa2fe53711d3ff2bca4966acc4190.gif">
+                            <span>mikasa</span>
+                            <span class="follow">Seguir</span>
+                        </li>
+                        <li>
+                            <img src="https://pa1.narvii.com/6845/6cd3ab2664aff8789debb27c23839d3547e49f31_hq.gif">
+                            <span>mikasa</span>
+                            <span class="follow">Seguir</span>
+                        </li>
+                        <li>
+                            <img src="https://i.pinimg.com/originals/c4/ff/a2/c4ffa2fe53711d3ff2bca4966acc4190.gif">
+                            <span>mikasa</span>
+                            <span class="follow">Seguir</span>
+                        </li>
+                        <li>
+                            <img src="https://i.pinimg.com/originals/c4/ff/a2/c4ffa2fe53711d3ff2bca4966acc4190.gif">
+                            <span>mikasa</span>
+                            <span class="follow">Seguir</span>
+                        </li>
+                        <li>
+                            <img src="https://i.pinimg.com/originals/c4/ff/a2/c4ffa2fe53711d3ff2bca4966acc4190.gif">
+                            <span>mikasa</span>
+                            <span class="follow">Seguir</span>
+                        </li>                        
+                    </ul>
+                </div>
+
+                <div class="sidebar__footer">
+                    <div class="sidebar__links">
+                        <a href="#">Sobre</a>
+                        <a href="#">Ajuda</a>
+                        <a href="#">Imprensa</a>
+                        <a href="#">API</a>
+                        <a href="#">Carreiras</a>
+                        <a href="#">Privacidade</a>
+                        <a href="#">Termos</a>
+                        <a href="#">Localizações</a>
+                        <a href="#">Principais contas</a>
+                        <a href="#">Hashtags</a>
+                        <a href="#">Idioma</a>
+                    </div>
+                    <p>&copy; 2022 INSTAGRAM DE TATAKAE COMUNICAÇÕES</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+</body>
+</html>
